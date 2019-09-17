@@ -3,7 +3,7 @@ CONFIG_NAME: 'DAMSM'
 DATASET_NAME: 'fashion'
 DATA_DIR: '/home/ubuntu/filestore/keshav/attgan/data'
 GPU_ID: 0
-WORKERS: 1
+WORKERS: 3
 
 
 TREE:
