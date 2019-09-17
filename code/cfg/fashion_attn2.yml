@@ -2,7 +2,7 @@ CONFIG_NAME: 'attn2'
 
 DATASET_NAME: 'fashion'
 DATA_DIR: '/home/ubuntu/filestore/keshav/attgan/data'
-GPU_ID: 0
+GPU_ID: -1
 WORKERS: 0
 
 
