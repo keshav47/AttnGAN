@@ -38,7 +38,7 @@ def conv3x3(in_planes, out_planes):
 # Upsale the spatial size by a factor of 2
 def upBlock(in_planes, out_planes):
     block = nn.Sequential(
-        nn.Upsample(scale_factor=2, mode='nearest',align_corners=True),
+        nn.Upsample(scale_factor=2, mode='nearest'),
         conv3x3(in_planes, out_planes * 2),
         nn.BatchNorm2d(out_planes * 2),
         GLU())
@@ -207,7 +207,7 @@ class CNN_ENCODER(nn.Module):
     def forward(self, x):
         features = None
         # --> fixed-size input: batch x 3 x 299 x 299
-        x = nn.Upsample(size=(299, 299), mode='bilinear')(x)
+        x = nn.Upsample(size=(299, 299), mode='bilinear',align_corners=True)(x)
         # 299 x 299 x 3
         x = self.Conv2d_1a_3x3(x)
         # 149 x 149 x 32
