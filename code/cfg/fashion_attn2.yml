@@ -3,7 +3,7 @@ CONFIG_NAME: 'glu-gan2'
 DATASET_NAME: 'fashion'
 DATA_DIR: '/home/ubuntu/filestore/keshav/attgan/data'
 GPU_ID: 0
-WORKERS: 1
+WORKERS: 0
 
 
 TREE:
