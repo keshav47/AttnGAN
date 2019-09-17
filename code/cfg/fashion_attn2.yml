@@ -7,8 +7,7 @@ WORKERS: 1
 
 
 TREE:
-    BRANCH_NUM: 1
-    BASE_SIZE: 299
+    BRANCH_NUM: 3
 
 TRAIN:
     FLAG: True
