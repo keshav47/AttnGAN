@@ -2,18 +2,18 @@ CONFIG_NAME: 'attn2'
 
 DATASET_NAME: 'fashion'
 DATA_DIR: '/home/ubuntu/filestore/keshav/attgan/data'
-GPU_ID: -1
+GPU_ID: 0
 WORKERS: 0
 
 
 TREE:
-    BRANCH_NUM: 3
+    BRANCH_NUM: 1
 
 TRAIN:
     FLAG: True
     NET_G: ''  # '../models/coco_AttnGAN2.pth'
     B_NET_D: True
-    BATCH_SIZE: 7  # 32
+    BATCH_SIZE: 48  # 32
     MAX_EPOCH: 120
     SNAPSHOT_INTERVAL: 5
     DISCRIMINATOR_LR: 0.0002
