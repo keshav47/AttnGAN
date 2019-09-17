@@ -1,4 +1,4 @@
-CONFIG_NAME: 'glu-gan2'
+CONFIG_NAME: 'attn2'
 
 DATASET_NAME: 'fashion'
 DATA_DIR: '/home/ubuntu/filestore/keshav/attgan/data'
