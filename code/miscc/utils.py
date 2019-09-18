@@ -97,7 +97,8 @@ def build_super_images(real_imgs, captions, ixtoword,
     # batch x seq_len x 17 x 17 --> batch x 1 x 17 x 17
     seq_len = max_word_num
     img_set = []
-    num = nvis  # len(attn_maps)
+    # num = nvis  # len(attn_maps)
+    num = len(attn_maps)
 
     text_map, sentences = \
         drawCaption(text_convas, captions, ixtoword, vis_size)
